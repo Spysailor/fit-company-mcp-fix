@@ -1,0 +1,38 @@
+{
+  "mcpServers": {
+    "airtable-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "airtable-mcp-server"
+      ],
+      "env": {
+        "AIRTABLE_API_KEY": "VOTRE_TOKEN_AIRTABLE_ICI"
+      }
+    },
+    "github-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "VOTRE_TOKEN_GITHUB_ICI"
+      }
+    },
+    "browser-automation": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ]
+    },
+    "memory-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    }
+  }
+}
